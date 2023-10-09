@@ -48,7 +48,7 @@ function checkWinner(playerChoice, botChoice) {
     }else if(botChoice == "scissors" && playerChoice == "paper"){
         console.log('player wins');
     }else if(botChoice == "paper" && playerChoice == "rock"){
-        alert('player wins');
+        console.log('player wins');
     }
 }
 
