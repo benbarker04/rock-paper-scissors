@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*General styes*/
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
