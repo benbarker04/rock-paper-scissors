@@ -1,6 +1,4 @@
 const buttons = document.getElementsByClassName('buttons')
-/*const playerScore = document.getElementById('player-score')*/
-/*const botScore = document.getElementById('bots-score')*/
 const playerImage = document.getElementById('player-image')
 const botImage = document.getElementById('bot-image')
 const choices = ['rock' ,'paper' ,'scissors']
@@ -25,7 +23,7 @@ function playGame(playerChoice){
     botImage.alt = choices[botChoice];
 
     let result = checkWinner(choices[botChoice], choices[playerChoice]);
-
+    gameFinsied(playerScore, botScore);
 }
 
 
@@ -35,31 +33,42 @@ function checkWinner(playerChoice, botChoice) {
     if (playerChoice == botChoice) {
         console.log('tie');
     } else if (playerChoice == "rock" && botChoice == "scissors") {
-        let oldBotScore = parseInt(document.getElementById('bots-score').innerText);
-        document.getElementById('bots-score').innerText = ++oldBotScore
+        let botScore = parseInt(document.getElementById('bots-score').innerText);
+        document.getElementById('bots-score').innerText = ++botScore
         console.log('bot wins');
     } else if (playerChoice == "scissors" && botChoice == "paper") {
-        oldBotScore = parseInt(document.getElementById('bots-score').innerText);
-        document.getElementById('bots-score').innerText = ++oldBotScore
+        botScore = parseInt(document.getElementById('bots-score').innerText);
+        document.getElementById('bots-score').innerText = ++botScore
         console.log('bot wins');
     }else if(playerChoice == "paper" && botChoice == "rock"){
-        oldBotScore = parseInt(document.getElementById('bots-score').innerText);
-        document.getElementById('bots-score').innerText = ++oldBotScore
+        botScore = parseInt(document.getElementById('bots-score').innerText);
+        document.getElementById('bots-score').innerText = ++botScore
             console.log('bot wins');
         }
     
 
     if (botChoice == "rock" && playerChoice == "scissors"){
-        let oldPlayerScore = parseInt(document.getElementById('player-score').innerText);
-        document.getElementById('player-score').innerText = ++oldPlayerScore
+        let playerScore = parseInt(document.getElementById('player-score').innerText);
+        document.getElementById('player-score').innerText = ++playerScore
         console.log('player wins');
     }else if(botChoice == "scissors" && playerChoice == "paper"){
-        oldPlayerScore = parseInt(document.getElementById('player-score').innerText);
-        document.getElementById('player-score').innerText = ++oldPlayerScore
+        playerScore = parseInt(document.getElementById('player-score').innerText);
+        document.getElementById('player-score').innerText = ++playerScore
         console.log('player wins');
     }else if(botChoice == "paper" && playerChoice == "rock"){
-        oldPlayerScore = parseInt(document.getElementById('player-score').innerText);
-        document.getElementById('player-score').innerText = ++oldPlayerScore
+        playerScore = parseInt(document.getElementById('player-score').innerText);
+        document.getElementById('player-score').innerText = ++playerScore
         console.log('player wins');
+    }
+}
+
+/*Check scores and end game if 5 points is reached*/
+function gameFinsied(playerScore,botScore){
+    if (playerScore == 5){
+        alert("You have won refresh the page to restart")
+        document.getElementsByTagName('choices').disabled == true
+    } else if (botScore == 5 ){
+        alert("You have lost refresh the page to try again")
+        document.getElementsByTagName('choices').disabled == true
     }
 }
