@@ -18,7 +18,7 @@ header {
 }
 
 /*Game Area*/
-#game-area {
+#game-area{
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -27,41 +27,40 @@ header {
 }
 
 
-#players-choice {
+#players-choice{
     float: left;
     background-color: lightgrey;
     width: 45%;
 }
 
-#player-image {
+#player-image{
     width: 75%;
 }
 
-#bots-choice {
+#bots-choice{
     float: right;
     background-color: lightgrey;
     width: 45%;
 }
 
-#bot-image {
+#bot-image{
     width: 75%;
 }
-
-/*Choices area*/
-#choices {
+ /*Choices area*/
+ #choices{
     display: inline-block;
     margin: 10px;
     width: 100%;
     height: 40px;
     font-size: 150%;
     /*background-color: aqua;*/
-}
+ }
 
-#choices button {
+ #choices button{
     all: unset;
     display: inline-block;
     margin: 2%;
-}
+ }
 
 /*footer*/
 footer {
@@ -76,9 +75,14 @@ footer {
     background-color: grey;
 }
 
+/*Rules*/
+#rules{
+    font-size: 15px;
+}
+
 /*media query:desktops and larger(1200px and wider)*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
     #choices button:hover {
-        text-decoration: underline;
-    }
+            text-decoration: underline;
+        }
 }
