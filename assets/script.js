@@ -13,6 +13,7 @@ for (let button of buttons) {
     } )
 }
 
+/*Main function for game */
 function playGame(playerChoice){
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice]
@@ -22,4 +23,22 @@ function playGame(playerChoice){
 
     botImage.src = `assets/images/${choices[botChoice]}.png`;
     botImage.alt = choices[botChoice];
+
+    let result = checkWinner(choices[botChoice], choices[playerChoice]);
+
+}
+
+
+/*Check winner*/
+
+function checkWinner(playerChoice, botChoice) {
+    if (playerChoice == botChoice) {
+        console.log('tie');
+    } else if (playerChoice == "rock" && botChoice == "scissors")
+    (playerChoice == "scissors" && botChoice == "paper")
+    (playerChoice == "paper" && botChoice == "rock") {
+        console.log('player wins');
+    }else{
+        console.log('bot wins');
+    }
 }
