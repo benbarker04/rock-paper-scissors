@@ -4,25 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="rock paper scissors game. rock paper scissors. game. browser game. rock paper scissors browser game. rock paper scissors game"/>
+    <meta
+      name="description"
+      content="rock paper scissors game. rock paper scissors. game. browser game. rock paper scissors browser game. rock paper scissors game"
+    />
     <meta name="keywords" content="rock, paper, scissors, game, browser game" />
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/6793733.png">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/6793733.png"
+    />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
     <header>
-        <h1>Rock Paper Scissors</h1>
+      <h1>Rock Paper Scissors</h1>
     </header>
     <main>
-        <section id="game-area">
-            <div id="players-choice">
-        
-            </div>
-            <div id="bots-choice">
-        
-            </div>
-        </section>
+      <section id="game-area">
+        <div id="players-choice">
+          <p id="player-score">
+            Your Score:
+            <span>0</span>
+          </p>
+          <img
+            id="player-image"
+            src="assets/images/6793733.png"
+            alt="image of 3 hands one rock, one paper, and one scissors"
+          />
+        </div>
+        <div id="bots-choice">
+          <p id="bots-score">
+            Bots Score:
+            <span>0</span>
+          </p>
+          <img
+            id="bot-image"
+            src="assets/images/6793733.png"
+            alt="image of 3 hands one rock, one paper, and one scissors"
+          />
+        </div>
+        <div id="choices">
+            <p>Make your choice:</p>
+          <button>Rock</button>
+          <button>Paper</button>
+          <button>Scissors</button>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
