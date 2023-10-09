@@ -76,9 +76,9 @@ footer {
 }
 
 /*Rules*/
-#rules{
+/*#rules{
     font-size: 15px;
-}
+}*/
 
 /*media query:desktops and larger(1200px and wider)*/
 @media screen and (min-width: 1200px){
