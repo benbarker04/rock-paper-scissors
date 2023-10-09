@@ -24,33 +24,40 @@
     </header>
     <main>
       <section id="game-area">
+        <!--player-->
         <div id="players-choice">
-          <h2 id="player-score">
+            <!--players Score-->
+          <h2 class="scores">
             Your Score:
-            <span>0</span>
+            <span id="player-score">0</span>
           </h2>
+          <!--Players Image-->
           <img
             id="player-image"
             src="assets/images/6793733.png"
             alt="image of 3 hands one rock, one paper, and one scissors"
           />
         </div>
+        <!--Computer-->
         <div id="bots-choice">
-          <h2 id="bots-score">
+            <!--Computers score-->
+          <h2 class="scores">
             Bots Score:
-            <span>0</span>
+            <span id="bots-score">0</span>
           </h2>
+          <!--Computers image-->
           <img
             id="bot-image"
             src="assets/images/6793733.png"
             alt="image of 3 hands one rock, one paper, and one scissors"
           />
         </div>
+        <!--Buttons-->
         <div id="choices">
             <h3>Make your choice:</h3>
-          <button>Rock</button>
-          <button>Paper</button>
-          <button>Scissors</button>
+          <button class="buttons" aria-label="rock" data-choice="0">Rock</button>
+          <button class="buttons" aria-label="paper" data-choice="1">Paper</button>
+          <button class="buttons" aria-label="scissors" data-choice="2">Scissors</button>
         </div>
       </section>
     </main>
