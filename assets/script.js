@@ -34,11 +34,22 @@ function playGame(playerChoice){
 function checkWinner(playerChoice, botChoice) {
     if (playerChoice == botChoice) {
         console.log('tie');
-    } else if (playerChoice == "rock" && botChoice == "scissors")
-    (playerChoice == "scissors" && botChoice == "paper")
-    (playerChoice == "paper" && botChoice == "rock") {
-        console.log('player wins');
-    }else{
+    } else if (playerChoice == "rock" && botChoice == "scissors") {
         console.log('bot wins');
+    } else if (playerChoice == "scissors" && botChoice == "paper") {
+        console.log('bot wins');
+    }else if(playerChoice == "paper" && botChoice == "rock"){
+            console.log('bot wins');
+        }
+    
+
+    if (botChoice == "rock" && playerChoice == "scissors"){
+        console.log('player wins');
+    }else if(botChoice == "scissors" && playerChoice == "paper"){
+        console.log('player wins');
+    }else if(botChoice == "paper" && playerChoice == "rock"){
+        alert('player wins');
     }
 }
+
+
