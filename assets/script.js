@@ -63,7 +63,7 @@ function checkWinner(playerChoice, botChoice) {
 }
 
 /*Check scores and end game if 5 points is reached*/
-function gameFinished(playerScore, botScore) { // Correct function name
+function gameFinished(playerScore, botScore) {
     if (playerScore == 5) {
         alert("You have won! Refresh the page to restart");
         disableButtons();
