@@ -23,7 +23,7 @@ function playGame(playerChoice){
     botImage.alt = choices[botChoice];
 
     let result = checkWinner(choices[botChoice], choices[playerChoice]);
-    gameFinsied(playerScore, botScore);
+    gameFinished(playerScore, botScore);
 }
 
 
@@ -63,12 +63,20 @@ function checkWinner(playerChoice, botChoice) {
 }
 
 /*Check scores and end game if 5 points is reached*/
-function gameFinsied(playerScore,botScore){
-    if (playerScore == 5){
-        alert("You have won refresh the page to restart")
-        document.getElementsByTagName('choices').disabled == true
-    } else if (botScore == 5 ){
-        alert("You have lost refresh the page to try again")
-        document.getElementsByTagName('choices').disabled == true
+function gameFinished(playerScore, botScore) { // Correct function name
+    if (playerScore == 5) {
+        alert("You have won! Refresh the page to restart");
+        disableButtons();
+    }
+    if (botScore == 5) {
+        alert("You have lost! Refresh the page to try again");
+        disableButtons();
+    }
+}
+
+/* Disable all buttons when the game is finished */
+function disableButtons() {
+    for (let button of buttons) {
+        button.disabled = true;
     }
 }
