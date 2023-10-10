@@ -17,9 +17,9 @@ Users of this game will learn the rules of the classic game rock, paper, scissor
    ![header](https://github.com/benbarker04/rock-paper-scissors/assets/131170958/66e7fce7-fbe7-4dff-9097-c267e2aac2ee)
 
 - Game Options Area
-   - The game options area includes a clear instruction telling the user to make a choice of either rock, paper or scissors in which these otions are interactive buttons that the user can click to make their choice.
+   - The game options area includes a clear instruction telling the user to make a choice of either rock, paper or scissors in which these options are interactive buttons that the user can click to make their choice.
    - This section provides interactive buttons that the user can click to make their choice and play the game.
-   - When the user hovers their over a button it will be underlined to make it clear to the user what button they are going to press
+   - When the user hovers their mouse over a button it will be underlined to make it clear to the user what button they are going to press
  
 ![options](https://github.com/benbarker04/rock-paper-scissors/assets/131170958/57bdc132-cf3b-48c7-99db-b94cbb2c30c0)
 
@@ -38,19 +38,19 @@ Users of this game will learn the rules of the classic game rock, paper, scissor
  
   ![footer](https://github.com/benbarker04/rock-paper-scissors/assets/131170958/475a9c43-0c07-4b19-9939-c76eabc31fc7)
 
-## Features Left To Implent
+## Features Left To Implement
 
 - Where there is time i would like to add a feature that pops up onto the screen saying who has won that round.
 
 ## Testing
 
-- I tested playing this game in different browsers such as Chrome, Microsoft Edge and safari.
+- I tested playing this game in different browsers such as Chrome, Microsoft Edge and Safari.
 - I have confirmed that the game results are always correct.
 - I have confirmed that the header, instructions, options and footer text are all readable and easy to understand.
-- I have confirmed that the colours and font choosen are easy to read and accesible by running it through lighthouse in devtools 
+- I have confirmed that the colours and font chose are easy to read and accesible by running it through lighthouse in devtools 
 
 ![lighthouse](https://github.com/benbarker04/rock-paper-scissors/assets/131170958/348af1bf-f37b-4462-9a09-0793b039eadd)
-- I have confirmed that the website is responsive, looks good and functions on all standerd screen sizes using the devtools device tool bar.
+- I have confirmed that the website is responsive, looks good and functions on all standard screen sizes using the devtools device tool bar.
 
 ### Bugs
 
